@@ -13,6 +13,7 @@ Route::view("/tarifs", "tarifs")->name("tarifs");
 Route::view("/temoignages", "temoignages")->name("temoignages");
 Route::view("/equipes", "equipes")->name("equipes");
 Route::view("/projets", "projets")->name("projets");
+Route::view("/contactez-nous", "contact")->name("contact");
 
 
 

@@ -17,10 +17,11 @@
 
                 <h2 class="text-3xl md:text-5xl font-bold mb-6">MASOVIA Madagascar, l’innovation sur mesure.</h2>
 
-                <a href="#"
-                    class="bg-[#F0F235] text-black font-bold py-3 px-6 rounded-full">
-                    En savoir plus <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <div class="mt-10">
+                    <a href="" class="bg-[#F0F235] hover:bg-[#c9cc0c] transition duration-150 text-black font-bold py-3 px-6 rounded-full">
+                        En savoir plus <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

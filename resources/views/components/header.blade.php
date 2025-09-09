@@ -4,17 +4,17 @@
 
     {{-- Menu desktop (horizontal) --}}
     <ul class="hidden lg:flex text-white text-sm font-semibold items-center space-x-6">
-        <li><a href="">Accueil</a></li>
-        <li><a href="">À propos</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Processus</a></li>
-        <li><a href="">Technologies</a></li>
-        <li><a href="">Tarifs</a></li>
-        <li><a href="">Témoignages</a></li>
-        <li><a href="">Équipes</a></li>
-        <li><a href="">Projets</a></li>
+        <li><a href="{{ route("accueil") }}" class="hover:text-[#F0F235] {{ Route::is("accueil") ? 'text-[#F0F235]' : '' }}" >Accueil</a></li>
+        <li><a href="{{ route("apropos") }}" class="hover:text-[#F0F235] {{ Route::is("apropos") ? 'text-[#F0F235]' : '' }}" >À propos</a></li>
+        <li><a href="{{ route("services") }}" class="hover:text-[#F0F235] {{ Route::is("services") ? 'text-[#F0F235]' : '' }}" >Services</a></li>
+        <li><a href="{{ route("processus") }}" class="hover:text-[#F0F235] {{ Route::is("processus") ? 'text-[#F0F235]' : '' }}" >Processus</a></li>
+        <li><a href="{{ route("technologies") }}" class="hover:text-[#F0F235] {{ Route::is("technologies") ? 'text-[#F0F235]' : '' }}" >Technologies</a></li>
+        <li><a href="{{ route("processus") }}" class="hover:text-[#F0F235] {{ Route::is("processus") ? 'text-[#F0F235]' : '' }}" >Tarifs</a></li>
+        <li><a href="{{ route("tarifs") }}" class="hover:text-[#F0F235] {{ Route::is("tarifs") ? 'text-[#F0F235]' : '' }}" >Témoignages</a></li>
+        <li><a href="{{ route("temoignages") }}" class="hover:text-[#F0F235] {{ Route::is("temoignages") ? 'text-[#F0F235]' : '' }}" >Équipes</a></li>
+        <li><a href="{{ route("equipes") }}" class="hover:text-[#F0F235] {{ Route::is("equipes") ? 'text-[#F0F235]' : '' }}" >Projets</a></li>
         <li>
-            <a href="" class="bg-[#F0F235] py-2 px-4 rounded-md text-[#27283E]">
+            <a href="{{ route("contact") }}" class="bg-[#F0F235] hover:bg-[#c9cc0c] transition duration-150  py-2 px-6 rounded-md text-[#27283E]">
                 CONTACT
             </a>
         </li>
