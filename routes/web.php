@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProcessusController;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TemoignageController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Contracts\Service\ServiceCollectionInterface;
 
@@ -13,7 +14,7 @@ Route::get("/services", [ServiceController::class, "items"])->name("services");
 Route::get("/processus", [ProcessusController::class, "getAllProcess"])->name("processus");
 Route::view("/technologies", "technologies")->name("technologies");
 Route::view("/tarifs", "tarifs")->name("tarifs");
-Route::view("/temoignages", "temoignages")->name("temoignages");
+Route::get("/temoignages", [TemoignageController::class, "getAllTestimony"])->name("temoignages");
 Route::view("/equipes", "equipes")->name("equipes");
 Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
 Route::view("/contactez-nous", "contact")->name("contact");
