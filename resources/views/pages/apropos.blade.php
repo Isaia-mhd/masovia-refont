@@ -3,7 +3,7 @@
     A propos de nous
 @endsection
 @section('content')
-    <div class="w-full  max-w-[60%] md:max-w-[80%] mx-auto bg-cover bg-center shadow-lg bg-[#27283E]">
+    <div class="w-full  max-w-[60%] md:max-w-[80%] mx-auto bg-cover bg-center bg-[#27283E]">
         <div class=" space-y-5 md:flex justify-center items-center space-x-8 py-16">
             <img src="{{ asset('/images/apropos.png') }}" alt="apropos" class="md:w-[300px]">
             <div class="">

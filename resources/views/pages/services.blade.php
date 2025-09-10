@@ -3,7 +3,7 @@
     Nos Services
 @endsection
 @section('content')
-    <div class="w-full max-w-[60%] md:max-w-[80%] mx-auto bg-cover bg-center shadow-lg bg-[#27283E] md:flex justify-center items-center gap-20 pt-16 pb-12">
+    <div class="w-full max-w-[60%] md:max-w-[80%] mx-auto bg-cover bg-center bg-[#27283E] md:flex justify-center items-center gap-20 pt-16 pb-12">
         <div class="mb-12">
             <h3 class="text-[#A6A6A6] text-md font-semibold">SERVICES</h3>
             <h2 class="text-[#FFFFFF] text-xl font-semibold">Nos Services</h2>
