@@ -11,6 +11,6 @@
     </div>
 
     <div class="w-full flex justify-center">
-        <a href="" class="bg-[#3E3F71] text-white rounded-full py-2 text-center px-4">En savoir plus</a>
+        <a href="" class="bg-[#3E3F71] hover:bg-[#c6c910] transition duration-500 text-white rounded-full py-2 text-center px-4">En savoir plus</a>
     </div>
 </div>
