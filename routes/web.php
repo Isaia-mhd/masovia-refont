@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProcessusController;
+use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Contracts\Service\ServiceCollectionInterface;
@@ -14,7 +15,7 @@ Route::view("/technologies", "technologies")->name("technologies");
 Route::view("/tarifs", "tarifs")->name("tarifs");
 Route::view("/temoignages", "temoignages")->name("temoignages");
 Route::view("/equipes", "equipes")->name("equipes");
-Route::view("/projets", "projets")->name("projets");
+Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
 Route::view("/contactez-nous", "contact")->name("contact");
 
 
