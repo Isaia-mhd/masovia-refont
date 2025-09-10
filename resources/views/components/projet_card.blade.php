@@ -6,7 +6,7 @@
     <div class="h-[50px] flex items-center justify-center px-2">
         <h3 class=" font-semibold text-md text-center">{{ $projet['name'] }}</h3>
     </div>
-    <div class="h-[80px] px-4">
+    <div class="h-[100px] px-10">
         <p class="text-xs text-[#737373] text-center">{{ $projet['description'] }}</p>
     </div>
 

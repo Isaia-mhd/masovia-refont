@@ -8,7 +8,7 @@
             <h3 class="text-[#A6A6A6] text-md font-semibold">PROJETS</h3>
             <h2 class="text-[#FFFFFF] text-2xl font-semibold">Nos réalisations</h2>
         </div>
-        <div class="w-full grid grid-cols-1 md:grid-cols-3 justify-items-center gap-12 pt-12">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-12 pt-12">
             @foreach ($projets as $projet )
                 @include("components.projet_card", ["projet" => $projet])
             @endforeach
