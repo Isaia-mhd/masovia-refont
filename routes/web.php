@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Contracts\Service\ServiceCollectionInterface;
 
 // Route::get('/', function () { return view('welcome'); })->name("home");
 Route::view("/", "pages/accueil")->name("accueil");
 Route::view("/apropos", "pages/apropos")->name("apropos");
-Route::view("/services", "services")->name("services");
+Route::get("/services", [ServiceController::class, "items"])->name("services");
 Route::view("/processus", "processus")->name("processus");
 Route::view("/technologies", "technologies")->name("technologies");
 Route::view("/processus", "processus")->name("processus");
