@@ -7,8 +7,8 @@
         <div class=" space-y-5 md:flex justify-center items-center space-x-8 py-16">
             <img src="{{ asset('/images/apropos.png') }}" alt="apropos" class="md:w-[300px]">
             <div class="">
-                <h3 class="text-[#A6A6A6] text-sm">À PROPOS</h3>
-                <h2 class="text-[#FFFFFF] text-lg font-semibold">Notre Start-Up</h2>
+                <h3 class="text-[#A6A6A6] text-md font-semibold">À PROPOS</h3>
+                <h2 class="text-[#FFFFFF] text-xl font-semibold">Notre Start-Up</h2>
                 <p class="text-[#FFFFFF] text-sm pt-6">Basée à Antananarivo, Masovia Madagascar conçoit des solutions
                     informatiques sur mesure. Notre équipe passionnée accompagne ses clients dans la gestion complète de leurs
                     projets technologiques, en proposant des solutions innovantes et adaptées qui visent à dépasser leurs

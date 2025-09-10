@@ -6,7 +6,7 @@
     <div class="w-full max-w-[60%] md:max-w-[80%] mx-auto bg-cover bg-center shadow-lg bg-[#27283E] md:flex justify-center items-center gap-20 pt-16 pb-12">
         <div class="mb-12">
             <h3 class="text-[#A6A6A6] text-md font-semibold">SERVICES</h3>
-            <h2 class="text-[#FFFFFF] text-2xl font-semibold">Nos Services</h2>
+            <h2 class="text-[#FFFFFF] text-xl font-semibold">Nos Services</h2>
             <p class="text-[#FFFFFF] text-md pt-16">On propose une large gamme de services IT, incluant développement web et
                 mobile, design UI/UX, ainsi que l’administration sécurisée des réseaux et systèmes. </p>
 
