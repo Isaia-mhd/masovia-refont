@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EquipeController;
 use App\Http\Controllers\ProcessusController;
 use App\Http\Controllers\ProjetController;
@@ -20,7 +21,7 @@ Route::get("/tarifs", [TarifController::class, "getAllTarifs"])->name("tarifs");
 Route::get("/temoignages", [TemoignageController::class, "getAllTestimony"])->name("temoignages");
 Route::get("/equipes", [EquipeController::class, "getTeams"])->name("equipes");
 Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
-Route::view("/contactez-nous", "contact")->name("contact");
+Route::get("/contactez-nous", [ContactController::class, "contact"])->name("contact");
 
 
 
