@@ -6,4 +6,7 @@
         <p class="text-lg font-semibold">{{ $tech["name"] }}</p>
         <p class="text-sm text-[#BBBBBB]">{{ $tech["description"] }}</p>
     </div>
+    @if ($tech["cross"])
+        <img src="{{ asset("/images/line.png") }}" alt="" class="w-12 relative top-[100%] left-[15%] hidden xl:block">
+    @endif
 </div>
