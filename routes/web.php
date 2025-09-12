@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\EquipeController;
 use App\Http\Controllers\ProcessusController;
 use App\Http\Controllers\ProjetController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TemoignageController;
+use App\Services\EquipeComponent;
 use Illuminate\Support\Facades\Route;
 use Symfony\Contracts\Service\ServiceCollectionInterface;
 
@@ -15,7 +17,7 @@ Route::get("/processus", [ProcessusController::class, "getAllProcess"])->name("p
 Route::view("/technologies", "technologies")->name("technologies");
 Route::view("/tarifs", "tarifs")->name("tarifs");
 Route::get("/temoignages", [TemoignageController::class, "getAllTestimony"])->name("temoignages");
-Route::view("/equipes", "equipes")->name("equipes");
+Route::get("/equipes", [EquipeController::class, "getTeams"])->name("equipes");
 Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
 Route::view("/contactez-nous", "contact")->name("contact");
 
