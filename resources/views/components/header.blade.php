@@ -1,5 +1,5 @@
 <div class="relative w-full">
-    <nav class="w-full h-[100px] border-b border-[#C0C0C0] shadow-md flex items-center justify-between px-6 md:px-10">
+    <nav class="w-full h-[100px] border-b border-gray-500 flex items-center justify-between px-6 md:px-10">
         {{-- Logo --}}
         <img src="{{ asset('/images/Logo.png') }}" alt="masovia_logo" class="h-[60px] md:h-[80px] cursor-pointer">
 
