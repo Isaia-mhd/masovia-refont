@@ -7,7 +7,7 @@
     </div>
     <div class="w-full">
         <p class="text-2xl font-semibold text-start">
-            € {{ $tarif['type']['month'] }} / mois
+            €{{ $tarif['type']['month'] }} / mois
         </p>
     </div>
     <div
