@@ -8,11 +8,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TarifController;
 use App\Http\Controllers\TechController;
 use App\Http\Controllers\TemoignageController;
-use App\Services\EquipeComponent;
 use Illuminate\Support\Facades\Route;
-use Symfony\Contracts\Service\ServiceCollectionInterface;
 
-// Route::get('/', function () { return view('welcome'); })->name("home");
 Route::view("/", "pages/accueil")->name("accueil");
 Route::view("/apropos", "pages/apropos")->name("apropos");
 Route::get("/services", [ServiceController::class, "items"])->name("services");
