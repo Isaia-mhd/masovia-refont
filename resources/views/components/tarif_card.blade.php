@@ -1,5 +1,5 @@
 <div
-    class="w-[100%] text-white bg-[#585980] rounded-md py-6 cursor-pointer space-y-10 px-6 hover:bg-[#F0F235] hover:text-black group transition duration-175">
+    class="w-[100%] text-white bg-[#585980] rounded-md py-6 cursor-pointer space-y-10 px-6 hover:bg-[#F0F235] hover:text-black group transition duration-500">
     <div class="h-[50px] text-center">
         <p class="text-2xl text-start font-semibold">{{ $tarif['category'] }}</p>
         <h3 class=" font-normal text-xs text-start">{{ $tarif['description'] }}</h3>
