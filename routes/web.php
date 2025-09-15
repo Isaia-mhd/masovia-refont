@@ -17,9 +17,17 @@ Route::get("/processus", [ProcessusController::class, "getAllProcess"])->name("p
 Route::get("/technologies", [TechController::class, "techno"])->name("technologies");
 Route::get("/tarifs", [TarifController::class, "getAllTarifs"])->name("tarifs");
 Route::get("/temoignages", [TemoignageController::class, "getAllTestimony"])->name("temoignages");
-Route::get("/equipes", [EquipeController::class, "getTeams"])->name("equipes");
+Route::get("/equipes", [EquipeController::class, "getTeamsActive"])->name("equipes");
 Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
 Route::get("/contactez-nous", [ContactController::class, "contact"])->name("contact");
 Route::post("/email", [ContactController::class, "sendMail"])->name("email");
 
+Route::prefix("admin")->group(function(){
+    Route::get("/equipe", [EquipeController::class, "getAllTeams"])->name("equipe.liste");
+    Route::get("/equipe/nouveau", [EquipeController::class, "new"])->name("equipe.nouveau");
+    Route::post("/equipe/nouveau", [EquipeController::class, "store"])->name("equipe.enregistre");
+    Route::get("/equipe/{team}/modifier", [EquipeController::class, "edit"])->name("equipe.modifier");
+    Route::put("/equipe/{team}", [EquipeController::class, "update"])->name("equipe.maj");
+    Route::delete("/equipe/{team}/supprime", [EquipeController::class, "store"])->name("equipe.supprime");
 
+});

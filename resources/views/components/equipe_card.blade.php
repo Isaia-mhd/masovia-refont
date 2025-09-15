@@ -1,6 +1,6 @@
 <div class="w-[80%] bg-[#3E3F71] rounded-sm py-6 space-y-6 cursor-pointer hover:bg-[#F0F235] transition duration-500 group">
     <div class="rounded-full flex items-center justify-center">
-        <img src="{{ asset($equipe['avatar']) }}" alt="icon" class="w-[60%] rounded-full group-hover:border-2 group-hover:border-black">
+        <img src="{{ asset("storage/". $equipe['avatar']) }}" alt="icon" class="w-[60%] rounded-full group-hover:border-2 group-hover:border-black">
     </div>
     <div class="h-[50px] text-center px-2">
         <h3 class=" font-semibold text-md text-center text-white group-hover:text-black">{{ $equipe['name'] }}</h3>
