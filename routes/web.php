@@ -20,6 +20,6 @@ Route::get("/temoignages", [TemoignageController::class, "getAllTestimony"])->na
 Route::get("/equipes", [EquipeController::class, "getTeams"])->name("equipes");
 Route::get("/projets", [ProjetController::class, "getAllProjects"])->name("projets");
 Route::get("/contactez-nous", [ContactController::class, "contact"])->name("contact");
-
+Route::post("/email", [ContactController::class, "sendMail"])->name("email");
 
 
