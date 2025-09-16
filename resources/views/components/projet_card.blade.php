@@ -1,7 +1,7 @@
 <div class="w-[80%] bg-[#CDCEED] rounded-sm pb-6">
 
     <div class="rounded-full flex items-center justify-center">
-        <img src="{{ asset($projet['image']) }}" alt="icon" class="w-full">
+        <img src="{{ asset("storage/" . $projet['image']) }}" alt="icon" class="w-full">
     </div>
     <div class="h-[50px] flex items-center justify-center px-2">
         <h3 class=" font-semibold text-md text-center">{{ $projet['name'] }}</h3>
