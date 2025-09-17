@@ -47,7 +47,7 @@
                     </button>
                     <h1 class="text-2xl font-semibold text-[#F0F235] truncate">Admin Panel</h1>
                 </div>
-                <p class="text-white font-semibold truncate">Admin Name</p>
+                <p class="text-white font-semibold truncate text-xs">{{ auth()->user()->email }}</p>
             </header>
 
             <main class="flex-1 overflow-y-auto p-4 box-border min-w-0">
