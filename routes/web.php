@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EquipeController;
 use App\Http\Controllers\ProcessusController;
@@ -38,4 +39,5 @@ Route::prefix("admin")->group(function(){
     Route::put("/projet/{project}", [ProjetController::class, "update"])->name("projet.maj");
     Route::delete("/projet/{project}/supprime", [ProjetController::class, "destroy"])->name("projet.supprime");
 
+    Route::get("/", [AdminController::class, "dashboard"])->name("admin.dashboard");
 });

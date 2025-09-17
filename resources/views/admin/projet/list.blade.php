@@ -1,8 +1,8 @@
-@extends('layouts.child_app')
-@section('title', 'Nouveau Projet')
+@extends('layouts.admin')
+@section('title', 'Projets')
 
-@section('content')
-    <div class="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 max-w-5xl mx-auto bg-[#27283E] pt-12 pb-10">
+@section('main')
+    <div class="w-full bg-[#27283E] pt-12 pb-10">
         <div class="mb-10 text-center">
             <h3 class="text-[#A6A6A6] text-sm sm:text-base font-semibold uppercase">PROJETS</h3>
             <h2 class="text-white text-xl font-semibold">Toutes les réalisations de Masovia</h2>

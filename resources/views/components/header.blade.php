@@ -2,7 +2,6 @@
     <nav class="w-full h-[100px] border-b border-gray-500 flex items-center justify-between px-6 md:px-10">
         {{-- Logo --}}
         <img src="{{ asset('/images/Logo.png') }}" alt="masovia_logo" class="h-[60px] md:h-[80px] cursor-pointer">
-
         {{-- Menu desktop (horizontal) --}}
         <ul class="hidden lg:flex text-white text-sm font-semibold items-center space-x-6">
             <li><a href="{{ route('accueil') }}"
