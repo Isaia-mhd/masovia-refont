@@ -2,11 +2,7 @@
 @section('title', 'Equipes')
 
 @section('main')
-    <div class="w-full bg-[#27283E] pt-12 pb-10">
-        <div class="mb-10 text-center">
-            <h3 class="text-[#A6A6A6] text-sm sm:text-base font-semibold uppercase">ÉQUIPES</h3>
-            <h2 class="text-white text-xl font-semibold">Toutes les équipes de Masovia</h2>
-        </div>
+    <div class="w-full bg-[#27283E] pb-10">
 
         <div class="w-full bg-[#27283E] shadow-2xl shadow-[#17182c] rounded-lg px-4 sm:px-8 lg:px-12 py-6 ">
             <h2 class="text-white text-xl sm:text-2xl mb-1">Liste des équipes</h2>
