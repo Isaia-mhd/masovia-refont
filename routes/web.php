@@ -23,7 +23,7 @@ Route::get("/projets", [ProjetController::class, "getAllProjectsActive"])->name(
 Route::get("/contactez-nous", [ContactController::class, "contact"])->name("contact");
 Route::post("/email", [ContactController::class, "sendMail"])->name("email");
 
-Route::prefix("admin")->group(function(){
+Route::prefix("admin")->middleware("auth")->group(function(){
     Route::get("/equipe", [EquipeController::class, "getAllTeams"])->name("equipe.liste");
     Route::get("/equipe/nouveau", [EquipeController::class, "new"])->name("equipe.nouveau");
     Route::post("/equipe/nouveau", [EquipeController::class, "store"])->name("equipe.enregistre");
@@ -41,3 +41,9 @@ Route::prefix("admin")->group(function(){
 
     Route::get("/", [AdminController::class, "dashboard"])->name("admin.dashboard");
 });
+
+Route::get("/login-admin", [AdminController::class, "login"])->name("login");
+Route::post("/auth", [AdminController::class, "authenticate"])->name("authenticate");
+Route::post("/logout", [AdminController::class, "logout"])->name("logout");
+
+

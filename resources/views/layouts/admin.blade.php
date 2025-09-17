@@ -16,7 +16,6 @@
 <body class="bg-[#27283E] font-poppins">
     <div class="flex h-screen">
 
-
         <aside id="sidebar"
             class="fixed z-30 inset-y-0 left-0 w-64 bg-gray-800 text-gray-100 transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out flex flex-col">
             <div class="p-6 text-xl font-bold border-b border-gray-700 flex items-center justify-between">
@@ -30,9 +29,10 @@
                 <a href="{{ route('projet.liste') }}" class="block px-4 py-2 rounded hover:bg-gray-700">Projects</a>
                 <a href="#" class="block px-4 py-2 rounded hover:bg-gray-700">Settings</a>
             </nav>
-            <div class="border-t border-gray-700">
-                <a href="#" class="block px-4 py-2 text-red-600 font-semibold rounded hover:bg-gray-700">Logout</a>
-            </div>
+            <form class="border-t border-gray-700" action="{{ route("logout") }}" method="POST">
+                @csrf
+                <button type="submit" class="w-full text-left px-4 py-2 text-red-600 font-semibold rounded hover:bg-gray-700 cursor-pointer">Logout</button>
+            </form>
         </aside>
 
 

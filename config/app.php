@@ -13,6 +13,11 @@ return [
     |
     */
 
+    'admin' => [
+        'email' => env('ADMIN_MAIL'),
+        'password' => env('ADMIN_PASSWORD'),
+    ],
+
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
